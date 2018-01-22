@@ -18,6 +18,13 @@ document.getElementById('demo').innerHTML = someStuff;
 });
 
 
+document.getElementById('random').addEventListener('click', function(){
+	someStuff.sort(function(a,b){
+		return .5 - Math.random()
+	});
+	document.getElementById('demo').innerHTML = someStuff;
+})
+
 
 
 
